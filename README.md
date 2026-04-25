@@ -15,7 +15,7 @@ This project follows Clean Architecture with a clear separation of concerns:
 lib/
 ├── core/                          # Shared utilities, constants, theme
 ├── features/
-│   ├── lock/
+│   ├── lock/ 
 │   │   └── presentation/
 │   │       ├── pages/             # AppLockPage
 │   │       └── widgets/           # PinPad widget
