@@ -1,16 +1,57 @@
-A clean and scalable Notes application built with Flutter, following Clean Architecture principles and a feature-based structure. The app focuses on performance, maintainability, and a smooth user experience.
-🚀 Features
-✍️ Create, edit, and delete notes بسهولة وسرعة
-🔒 Secure app lock using a PIN code
-🧩 Modular and scalable feature-based architecture
-⚡ State management using Cubit (Bloc Pattern)
-📂 Clear separation of layers (Presentation - Domain - Data)
-🎨 Simple and user-friendly UI
-⚙️ Dedicated Settings screen
-👤 Separate Profile feature
-🏗️ Architecture
-This project follows Clean Architecture, which helps in:
-Improving scalability and maintainability
-Making the codebase easier to test
-Separating concerns between different layers
-Project Structure:
+## 📝 Notes App
+
+A secure and feature-rich notes application built with Flutter, following Clean Architecture principles and BLoC/Cubit state management.
+
+---
+
+## ✨ Features
+
+* 📋 **Create & Manage Notes** — Write, edit, and organize your notes effortlessly
+* 🔒 **App Lock** — Protect your notes with a PIN pad for extra privacy
+* 👤 **User Profile** — Personalized profile management
+* ⚙️ **Settings** — Customize your experience with a dedicated settings page
+* ℹ️ **About Page** — App info and version details
+
+---
+
+## 🏗️ Architecture
+
+This project follows **Clean Architecture** with clear separation of concerns:
+
+```
+lib/
+├── core/                # Shared utilities, constants, theme
+├── features/
+│   ├── lock/
+│   │   └── presentation/
+│   │       ├── pages/
+│   │       └── widgets/
+│   │
+│   ├── notes/
+│   │   ├── data/        # Data sources, models, repositories implementation
+│   │   ├── domain/      # Entities, use cases, repository contracts
+│   │   └── presentation/# UI, BLoC/Cubit
+│   │
+│   ├── profile/
+│   │   ├── data/
+│   │   ├── domain/
+│   │   └── presentation/
+│   │
+│   └── settings/
+│       └── presentation/
+│           ├── pages/
+│           └── widgets/
+│
+├── injection_container.dart  # Dependency Injection setup
+└── main.dart
+```
+
+---
+
+## 🛠️ Tech Stack
+
+* **Flutter**
+* **Dart**
+* **BLoC / Cubit**
+* **Clean Architecture**
+* **get_it (Dependency Injection)**
