@@ -1,4 +1,4 @@
- Notes App
+📝 Notes App
 A secure and feature-rich notes application built with Flutter, following Clean Architecture principles and BLoC/Cubit state management.
 
 ✨ Features
@@ -13,16 +13,16 @@ A secure and feature-rich notes application built with Flutter, following Clean 
 🏗️ Architecture
 This project follows Clean Architecture with a clear separation of concerns:
 lib/
-├── core/                          # Shared utilities, constants, theme
+├── core/
 ├── features/
-│   ├── lock/ 
+│   ├── lock/
 │   │   └── presentation/
-│   │       ├── pages/             # AppLockPage
-│   │       └── widgets/           # PinPad widget
+│   │       ├── pages/        # AppLockPage
+│   │       └── widgets/      # PinPad
 │   ├── notes/
-│   │   ├── data/                  # Data sources, models, repositories impl
-│   │   ├── domain/                # Entities, use cases, repository contracts
-│   │   └── presentation/          # UI, BLoC/Cubit
+│   │   ├── data/
+│   │   ├── domain/
+│   │   └── presentation/
 │   ├── profile/
 │   │   ├── data/
 │   │   │   ├── datasources/
@@ -34,11 +34,7 @@ lib/
 │   │       └── pages/
 │   └── settings/
 │       └── presentation/
-│           ├── pages/             # SettingsPage, AboutPage
+│           ├── pages/        # SettingsPage, AboutPage
 │           └── widgets/
-├── injection_container.dart       # Dependency injection setup
+├── injection_container.dart
 └── main.dart
-
-🛠️ Tech Stack
-LayerTechnologyFrameworkFlutterLanguageDartState ManagementBLoC / CubitArchitectureClean ArchitectureDependency Injectionget_it
-
